@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Foodie Delight</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f8f8;
+    }
+
+    .container {
+      width: 100%;
+      background-color: #ff4d4d;
+    }
+
+    nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      padding: 0;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 15px 25px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #e60000;
+    }
+
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1350&q=80');
+      background-size: cover;
+      background-position: center;
+      height: 90vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    .hero button {
+      padding: 12px 25px;
+      font-size: 1rem;
+      border: none;
+      background-color: #ff4d4d;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    .hero button:hover {
+      background-color: #e60000;
+    }
+
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .section h2 {
+      margin-bottom: 30px;
+      font-size: 2rem;
+    }
+
+    .foods {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .food-card {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 250px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .food-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .food-card h3 {
+      margin: 15px 0 5px;
+    }
+
+    .food-card p {
+      padding: 0 10px 15px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Offers</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to Foodie Delight</h1>
+    <p>Delicious meals delivered to your door</p>
+    <button>Order Now</button>
+  </section>
+
+  <!-- Popular Food Items -->
+  <section class="section">
+    <h2>Popular Dishes</h2>
+    <div class="foods">
+      <div class="food-card">
+        <img src="https://source.unsplash.com/250x180/?pizza" alt="Pizza" />
+        <h3>Cheesy Pizza</h3>
+        <p>Hot and loaded with cheese and toppings.</p>
+      </div>
+      <div class="food-card">
+        <img src="https://source.unsplash.com/250x180/?burger" alt="Burger" />
+        <h3>Beef Burger</h3>
+        <p>Juicy beef patty with crisp lettuce and sauces.</p>
+      </div>
+      <div class="food-card">
+        <img src="https://source.unsplash.com/250x180/?pasta" alt="Pasta" />
+        <h3>Italian Pasta</h3>
+        <p>Freshly made pasta with creamy sauces.</p>
+      </div>
+      <div class="food-card">
+        <img src="https://source.unsplash.com/250x180/?sushi" alt="Sushi" />
+        <h3>Sushi Platter</h3>
+        <p>Fresh sushi rolls with soy and wasabi.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Foodie Delight. All rights reserved.
+  </footer>
+
+</body>
+</html>
